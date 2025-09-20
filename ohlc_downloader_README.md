@@ -44,9 +44,11 @@ uv run python ohlc_downloader.py --ticker 7203.T --frequency daily --period 1y -
 - `--no-bom` BOMを付与しない
 - `--no-adjust` 未調整の生OHLCを出力（既定は調整後OHLC）
 - `--total-return-index` TRI列（配当再投資を仮定、基準100）を追加
+\n+### codelist専用の補助オプション
+- `--sleep <sec>` codelistで複数銘柄を取得する際、各リクエスト間にスリープする秒数（既定: 2.0秒。`0`で無効）
 
 ## 使い方（複数ティッカー：codelist）
-`--codelist` にヘッダー付きCSV（UTF-8/BOM可）を指定すると、列 `etf_ticker` に含まれる全ティッカーを取得し、各ティッカーごとに `download/<asset_class>_<category>_<ticker>_<frequency>.csv` へ出力します（codelist専用の命名規則）。
+`--codelist` にヘッダー付きCSV（UTF-8/BOM可）を指定すると、列 `etf_ticker` に含まれる全ティッカーを取得し、各ティッカーごとに `download/<asset_class>_<category>_<ticker>_<frequency>.csv` へ出力します（codelist専用の命名規則）。また、Yahoo! Financeへの負荷軽減のため、各銘柄の取得間に `--sleep` で指定した秒数（既定2秒）の待機を挟みます。
 
 ```
 uv run python ohlc_downloader.py --codelist codelist.csv --frequency daily --period 5y

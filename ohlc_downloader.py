@@ -23,6 +23,7 @@ from __future__ import annotations
 import argparse
 import sys
 from typing import Optional
+import time
 
 import os
 import pandas as pd
@@ -55,6 +56,7 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
     p.add_argument("--no-adjust", action="store_true", help="未調整の生OHLCを出力（デフォルトは調整後OHLC）")
     p.add_argument("--total-return-index", dest="total_return_index", action="store_true", help="TRI（配当再投資を仮定、基準100）列を追加")
     p.add_argument("--codelist", default=None, help="codelist.csv のパス。列 etf_ticker の全銘柄を一括取得")
+    p.add_argument("--sleep", type=float, default=2.0, help="codelist時、各銘柄取得の間にスリープする秒数（既定: 2.0秒。0で無効）")
     return p.parse_args(argv)
 
 
@@ -283,11 +285,17 @@ def main(argv: Optional[list[str]] = None) -> int:
 
         total = len(order)
         errs = 0
-        for tk in order:
+        for i, tk in enumerate(order):
             ac_s, cat_s = mapping[tk]
             rc = fetch_and_write_one(tk, ac_s, cat_s)
             if rc != 0:
                 errs += 1
+            # 次のリクエストまでスリープ（最後の1件後は任意だが、体感速度のため省略）
+            if i < len(order) - 1 and (args.sleep or 0) > 0:
+                try:
+                    time.sleep(float(args.sleep))
+                except Exception:
+                    pass
         print(f"[INFO] 完了 {total - errs}/{total} 件", file=sys.stderr)
         return 0 if errs == 0 else 1
     else:
