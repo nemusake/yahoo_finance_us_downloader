@@ -1,91 +1,91 @@
-﻿index_name,primary_ticker,alternate_ticker,tracking_etf,etf_ticker,asset_manager,category,asset_class,index-ticker
-MSCI World,^MXWO,MXWO,iShares MSCI World ETF,URTH,BlackRock,country,equities,^990100-USD-STRD
-MSCI ACWI (All Country World),^MXWD,MXWD,iShares MSCI ACWI ETF,ACWI,BlackRock,country,equities,
-MSCI Emerging Markets,^MXEF,MXEF,iShares MSCI Emerging Markets ETF,EEM,BlackRock,country,equities,
-"MSCI EAFE (Europe, Australasia, Far East)",^MXEA,MXEA,iShares MSCI EAFE ETF,EFA,BlackRock,country,equities,
-MSCI USA,^MXUS,MSUSA,iShares MSCI USA ETF,EUSA,BlackRock,country,equities,
-MSCI Europe,^MXEU,MSEUR,iShares MSCI Europe ETF,IEUR,BlackRock,country,equities,
-MSCI Japan,^MXJP,MSJP,iShares MSCI Japan ETF,EWJ,BlackRock,country,equities,
-MSCI Pacific,^MXPC,MSPAC,iShares MSCI Pacific ex-Japan ETF,EPP,BlackRock,country,equities,
-MSCI China,^MXCN,MXCN,iShares MSCI China ETF,MCHI,BlackRock,country,equities,
-MSCI UK,^MXGB,MSUK,iShares MSCI United Kingdom ETF,EWU,BlackRock,country,equities,
-MSCI Germany,^MXDE,MSGR,iShares MSCI Germany ETF,EWG,BlackRock,country,equities,
-MSCI Canada,^MXCA,MSCAN,iShares MSCI Canada ETF,EWC,BlackRock,country,equities,
-MSCI Australia,^MXAU,MSAU,iShares MSCI Australia ETF,EWA,BlackRock,country,equities,
-MSCI Brazil,^MXBR,MSBR,iShares MSCI Brazil ETF,EWZ,BlackRock,country,equities,
-MSCI India,^MXIN,MSIN,iShares MSCI India ETF,INDA,BlackRock,country,equities,
-MSCI Russia,^MXRU,MSRU,iShares MSCI Russia ETF,ERUS,BlackRock,country,equities,
-MSCI South Korea,^MXKR,MSKR,iShares MSCI South Korea ETF,EWY,BlackRock,country,equities,
-MSCI Taiwan,^MXTW,MSTW,iShares MSCI Taiwan ETF,EWT,BlackRock,country,equities,
-MSCI ACWI ex-USA,^MXWDU,MXWDU,iShares MSCI ACWI ex U.S. ETF,ACWX,BlackRock,country,equities,
-MSCI Minimum Volatility World,^MVOL,MVOL,iShares MSCI Min Vol Global ETF,ACWV,BlackRock,country,equities,
-MSCI USA Value,^MXUS.V,MXUSV,iShares MSCI USA Value Factor ETF,VLUE,BlackRock,value,equities,
-MSCI EAFE Value,^MXEA.V,MXEAV,iShares MSCI EAFE Value ETF,EFV,BlackRock,value,equities,
-MSCI Emerging Markets Value,^MXEF.V,MXEFV,Schwab Fundamental Emerging Markets Equity ETF,FNDE,BlackRock,value,equities,
-MSCI World Growth,^MXWO.G,MXWOG,iShares MSCI World Growth ETF,IWFG,BlackRock,growth,equities,
-MSCI USA Growth,^MXUS.G,MXUSG,iShares MSCI USA Growth Factor ETF,IUSG,BlackRock,growth,equities,
-MSCI EAFE Growth,^MXEA.G,MXEAG,iShares MSCI EAFE Growth ETF,EFG,BlackRock,growth,equities,
-MSCI Emerging Markets Growth,^MXEF.G,MXEFG,iShares MSCI Emerging Markets Growth ETF,EMGF,BlackRock,growth,equities,
-MSCI USA Momentum,^MXUS.MO,MXUSMO,iShares MSCI USA Momentum Factor ETF,MTUM,BlackRock,momentum,equities,
-MSCI EAFE Momentum,^MXEA.MO,MXEAMO,iShares MSCI International Momentum Factor ETF,IMTM,BlackRock,momentum,equities,
-MSCI Emerging Markets Momentum,^MXEF.MO,MXEFMO,Invesco S&P Emerging Markets Momentum,EEMO,BlackRock,momentum,equities,
-MSCI USA Quality,^MXUS.QU,MXUSQU,iShares MSCI USA Quality Factor ETF,QUAL,BlackRock,quality,equities,
-MSCI EAFE Quality,^MXEA.QU,MXEAQU,iShares MSCI International Quality Factor ETF,IQLT,BlackRock,quality,equities,
-MSCI Emerging Markets Quality,^MXEF.QU,MXEFQU,iShares MSCI Emerging Markets Quality Factor ETF,EMQQ,BlackRock,quality,equities,
-MSCI World Minimum Volatility,^MVOL,MVOL,iShares MSCI Min Vol Global ETF,ACWV,BlackRock,low_volatility,equities,
-MSCI USA Minimum Volatility,^MXUS.MV,MXUSMV,iShares MSCI USA Min Vol Factor ETF,USMV,BlackRock,low_volatility,equities,
-MSCI EAFE Minimum Volatility,^MXEA.MV,MXEAMV,iShares MSCI EAFE Min Vol Factor ETF,EFAV,BlackRock,low_volatility,equities,
-MSCI Emerging Markets Minimum Volatility,^MXEF.MV,MXEFMV,iShares MSCI Emerging Markets Min Vol Factor ETF,EEMV,BlackRock,low_volatility,equities,
-MSCI USA High Dividend Yield,^MXUS.HDY,MXUSHDY,iShares MSCI USA High Dividend Yield ETF,HDV,BlackRock,dividend,equities,
-MSCI EAFE High Dividend Yield,^MXEA.HDY,MXEAHDY,iShares MSCI EAFE High Dividend ETF,HDEF,BlackRock,dividend,equities,
-MSCI Emerging Markets High Dividend Yield,^MXEF.HDY,MXEFHDY,iShares MSCI Emerging Markets High Dividend ETF,HEEM,BlackRock,dividend,equities,
-MSCI USA Small Cap,^MXUSSC,MXUSSC,iShares MSCI USA Small-Cap ETF,SUSA,BlackRock,small_cap,equities,
-MSCI EAFE Small Cap,^MXEASC,MXEASC,iShares MSCI EAFE Small-Cap ETF,SCZ,BlackRock,small_cap,equities,
-MSCI Emerging Markets Small Cap,^MXEFSC,MXEFSC,iShares MSCI Emerging Markets Small-Cap ETF,EEMS,BlackRock,small_cap,equities,
-MSCI World Diversified Multiple-Factor,^MXWOMF,MXWOMF,iShares MSCI Global Multifactor ETF,ACWF,BlackRock,multi_factor,equities,
-MSCI USA Diversified Multiple-Factor,^MXUSMF,MXUSMF,iShares MSCI USA Multifactor ETF,LRGF,BlackRock,multi_factor,equities,
-MSCI EAFE Diversified Multiple-Factor,^MXEAMF,MXEAMF,iShares MSCI International Multifactor ETF,INTF,BlackRock,multi_factor,equities,
-MSCI Emerging Markets Diversified Multiple-Factor,^MXEFMF,MXEFMF,iShares MSCI Emerging Markets Multifactor ETF,EMGF,BlackRock,multi_factor,equities,
-iShares MSCI Global REIT ETF,REET,REET,,REET,,country,real_estate,
-iShares MSCI U.S. Real Estate ETF,IYR,IYR,,IYR,,country,real_estate,
-iShares Gold Trust,IAU,IAU,,IAU,,gold,commodities,
-iShares Silver Trust,ARCX:SLV,ARCX:SLV,,ARCX:SLV,,silver,commodities,
-iShares S&P GSCI Commodity-Indexed Trust,GSG,GSG,,GSG,,total,commodities,
-iShares GSCI Commodity Dynamic Roll Strategy ETF,CMDY,CMDY,,CMDY,,total,commodities,
-iShares Bitcoin Trust ETF,IBIT,IBIT,,IBIT,,bitcoin,crypto,
-iShares Ethereum Trust ETF,ETHA,ETHA,,ETHA,,ethereum,crypto,
-JPYUSD,JPYUSD,JPYUSD,,JPYUSD=X,,usd,currencies,
-EURUSD,EURUSD,EURUSD,,EURUSD=X,,usd,currencies,
-GBPUSD,GBPUSD,GBPUSD,,GBPUSD=X,,usd,currencies,
-USDEUR,USDEUR,USDEUR,,EUR=X,,eur,currencies,
-JPYEUR,JPYEUR,JPYEUR,,JPYEUR=X,,eur,currencies,
-GBPEUR,GBPEUR,GBPEUR,,GBPEUR=X,,eur,currencies,
-USDJPY,USDJPY,USDJPY,,JPY=X,,jpy,currencies,
-EURJPY,EURJPY,EURJPY,,EURJPY=X,,jpy,currencies,
-GBPJPY,GBPJPY,GBPJPY,,GBPJPY=X,,jpy,currencies,
-USDGBP,USDGBP,USDGBP,,GBP=X,,gbp,currencies,
-EURGBP,EURGBP,EURGBP,,EURGBP=X,,gbp,currencies,
-JPYGBP,JPYGBP,JPYGBP,,JPYGBP=X,,gbp,currencies,
-米国債0-3ヶ月,SGOV,SGOV,SGOV（0–3m）,SGOV,,ultra_short_term,bonds,
-米国債1-3ヶ月,BIL,BIL,BIL（1–3m）,BIL,,ultra_short_term,bonds,
-米国債1-12ヶ月,SHV,SHV,SHV（1–12m）,SHV,,ultra_short_term,bonds,
-米国債3ヶ月,TBIL,TBIL,TBIL（3m）,TBIL,,ultra_short_term,bonds,
-米国債1-3年,SHY,SHY,1–3年: SHY,SHY,,short_term,bonds,
-米国債3-7年,IEI,IEI,3–7年: IEI,IEI,,intermediate_term,bonds,
-米国債10-20年,TLH,TLH,10–20年: TLH,TLH,,long_term,bonds,
-米国債20年超1,TLT,TLT,20年超: TLT,TLT,,ultra_long_term,bonds,
-米国債20年超2,SPTL,SPTL,20年超: SPTL,SPTL,,ultra_long_term,bonds,
-米国債総合1-30年,GOVT,GOVT,総合: GOVT（1–30年）,GOVT,,total,bonds,
-米国債インフレ連動0-5年1,STIP,STIP,0–5年: STIP,STIP,,short_term_inflation,bonds,
-米国債インフレ連動0-5年2,VTIP,VTIP,0–5年: VTIP,VTIP,,short_term_inflation,bonds,
-米国債インフレ連動総合1,TIP,TIP,総合: TIP,TIP,,total_inflation,bonds,
-米国債インフレ連動総合2,SCHP,SCHP,総合: SCHP,SCHP,,total_inflation,bonds,
-米国債短期フローティング1,TFLO,TFLO,短期フローティング: TFLO（iShares）,TFLO,,short_term_floating,bonds,
-米国債短期フローティング2,USFR,USFR,短期フローティング: USFR（WisdomTree）,USFR,,short_term_floating,bonds,
-米国債ストリップス長期デュレーション1,EDV,EDV,ゼロクーポン 25年超: EDV（Vanguard 20–30y STRIPS）,EDV,,long_term_floating,bonds,
-米国債ストリップス長期デュレーション2,ZROZ,ZROZ,ゼロクーポン 25年超: ZROZ（PIMCO 25+）,ZROZ,,long_term_floating,bonds,
-日本国債総合,2561.T,2561.T,総合（FTSE Japanese Government Bond）: 2561.T,2561.T,,total,bonds,
-日本国債7-10年,236A.T,236A.T,7–10年 JGB: 236A（iShares 7–10 Year JGB）,236A.T,,intermediate_term,bonds,
-日本国債国内総合,2510.T,2510.T,国内総合（NOMURA-BPI 国債中心）: 2510.T（NEXT FUNDS Japan Bond NOMURA-BPI）,2510.T,,total,bonds,
-先進国の自国通貨建て国債総合,IGOV,IGOV,先進国の自国通貨建て国債（非米）: IGOV（iShares International Treasury / Developed ex-US）,IGOV,,country,bonds,
-債券グローバル総合（政府＋社債含む、USDヘッジ）,BNDX,BNDX,"グローバル総合（政府＋社債含む、USDヘッジ）: BNDX（Vanguard Total International Bond, USDヘッジ）",BNDX,,country,bonds,
+﻿index_name,primary_ticker,alternate_ticker,tracking_etf,etf_ticker,asset_manager,category,asset_class
+MSCI World,^MXWO,MXWO,iShares MSCI World ETF,URTH,BlackRock,country,equities
+MSCI ACWI (All Country World),^MXWD,MXWD,iShares MSCI ACWI ETF,ACWI,BlackRock,country,equities
+MSCI Emerging Markets,^MXEF,MXEF,iShares MSCI Emerging Markets ETF,EEM,BlackRock,country,equities
+"MSCI EAFE (Europe, Australasia, Far East)",^MXEA,MXEA,iShares MSCI EAFE ETF,EFA,BlackRock,country,equities
+MSCI USA,^MXUS,MSUSA,iShares MSCI USA ETF,EUSA,BlackRock,country,equities
+MSCI Europe,^MXEU,MSEUR,iShares MSCI Europe ETF,IEUR,BlackRock,country,equities
+MSCI Japan,^MXJP,MSJP,iShares MSCI Japan ETF,EWJ,BlackRock,country,equities
+MSCI Pacific,^MXPC,MSPAC,iShares MSCI Pacific ex-Japan ETF,EPP,BlackRock,country,equities
+MSCI China,^MXCN,MXCN,iShares MSCI China ETF,MCHI,BlackRock,country,equities
+MSCI UK,^MXGB,MSUK,iShares MSCI United Kingdom ETF,EWU,BlackRock,country,equities
+MSCI Germany,^MXDE,MSGR,iShares MSCI Germany ETF,EWG,BlackRock,country,equities
+MSCI Canada,^MXCA,MSCAN,iShares MSCI Canada ETF,EWC,BlackRock,country,equities
+MSCI Australia,^MXAU,MSAU,iShares MSCI Australia ETF,EWA,BlackRock,country,equities
+MSCI Brazil,^MXBR,MSBR,iShares MSCI Brazil ETF,EWZ,BlackRock,country,equities
+MSCI India,^MXIN,MSIN,iShares MSCI India ETF,INDA,BlackRock,country,equities
+MSCI Russia,^MXRU,MSRU,iShares MSCI Russia ETF,ERUS,BlackRock,country,equities
+MSCI South Korea,^MXKR,MSKR,iShares MSCI South Korea ETF,EWY,BlackRock,country,equities
+MSCI Taiwan,^MXTW,MSTW,iShares MSCI Taiwan ETF,EWT,BlackRock,country,equities
+MSCI ACWI ex-USA,^MXWDU,MXWDU,iShares MSCI ACWI ex U.S. ETF,ACWX,BlackRock,country,equities
+MSCI Minimum Volatility World,^MVOL,MVOL,iShares MSCI Min Vol Global ETF,ACWV,BlackRock,country,equities
+MSCI USA Value,^MXUS.V,MXUSV,iShares MSCI USA Value Factor ETF,VLUE,BlackRock,value,equities
+MSCI EAFE Value,^MXEA.V,MXEAV,iShares MSCI EAFE Value ETF,EFV,BlackRock,value,equities
+MSCI Emerging Markets Value,^MXEF.V,MXEFV,Schwab Fundamental Emerging Markets Equity ETF,FNDE,BlackRock,value,equities
+MSCI World Growth,^MXWO.G,MXWOG,iShares MSCI World Growth ETF,IWFG,BlackRock,growth,equities
+MSCI USA Growth,^MXUS.G,MXUSG,iShares MSCI USA Growth Factor ETF,IUSG,BlackRock,growth,equities
+MSCI EAFE Growth,^MXEA.G,MXEAG,iShares MSCI EAFE Growth ETF,EFG,BlackRock,growth,equities
+MSCI Emerging Markets Growth,^MXEF.G,MXEFG,iShares MSCI Emerging Markets Growth ETF,EMGF,BlackRock,growth,equities
+MSCI USA Momentum,^MXUS.MO,MXUSMO,iShares MSCI USA Momentum Factor ETF,MTUM,BlackRock,momentum,equities
+MSCI EAFE Momentum,^MXEA.MO,MXEAMO,iShares MSCI International Momentum Factor ETF,IMTM,BlackRock,momentum,equities
+MSCI Emerging Markets Momentum,^MXEF.MO,MXEFMO,Invesco S&P Emerging Markets Momentum,EEMO,BlackRock,momentum,equities
+MSCI USA Quality,^MXUS.QU,MXUSQU,iShares MSCI USA Quality Factor ETF,QUAL,BlackRock,quality,equities
+MSCI EAFE Quality,^MXEA.QU,MXEAQU,iShares MSCI International Quality Factor ETF,IQLT,BlackRock,quality,equities
+MSCI Emerging Markets Quality,^MXEF.QU,MXEFQU,iShares MSCI Emerging Markets Quality Factor ETF,EMQQ,BlackRock,quality,equities
+MSCI World Minimum Volatility,^MVOL,MVOL,iShares MSCI Min Vol Global ETF,ACWV,BlackRock,low_volatility,equities
+MSCI USA Minimum Volatility,^MXUS.MV,MXUSMV,iShares MSCI USA Min Vol Factor ETF,USMV,BlackRock,low_volatility,equities
+MSCI EAFE Minimum Volatility,^MXEA.MV,MXEAMV,iShares MSCI EAFE Min Vol Factor ETF,EFAV,BlackRock,low_volatility,equities
+MSCI Emerging Markets Minimum Volatility,^MXEF.MV,MXEFMV,iShares MSCI Emerging Markets Min Vol Factor ETF,EEMV,BlackRock,low_volatility,equities
+MSCI USA High Dividend Yield,^MXUS.HDY,MXUSHDY,iShares MSCI USA High Dividend Yield ETF,HDV,BlackRock,dividend,equities
+MSCI EAFE High Dividend Yield,^MXEA.HDY,MXEAHDY,iShares MSCI EAFE High Dividend ETF,HDEF,BlackRock,dividend,equities
+MSCI Emerging Markets High Dividend Yield,^MXEF.HDY,MXEFHDY,iShares MSCI Emerging Markets High Dividend ETF,HEEM,BlackRock,dividend,equities
+MSCI USA Small Cap,^MXUSSC,MXUSSC,iShares MSCI USA Small-Cap ETF,SUSA,BlackRock,small_cap,equities
+MSCI EAFE Small Cap,^MXEASC,MXEASC,iShares MSCI EAFE Small-Cap ETF,SCZ,BlackRock,small_cap,equities
+MSCI Emerging Markets Small Cap,^MXEFSC,MXEFSC,iShares MSCI Emerging Markets Small-Cap ETF,EEMS,BlackRock,small_cap,equities
+MSCI World Diversified Multiple-Factor,^MXWOMF,MXWOMF,iShares MSCI Global Multifactor ETF,ACWF,BlackRock,multi_factor,equities
+MSCI USA Diversified Multiple-Factor,^MXUSMF,MXUSMF,iShares MSCI USA Multifactor ETF,LRGF,BlackRock,multi_factor,equities
+MSCI EAFE Diversified Multiple-Factor,^MXEAMF,MXEAMF,iShares MSCI International Multifactor ETF,INTF,BlackRock,multi_factor,equities
+MSCI Emerging Markets Diversified Multiple-Factor,^MXEFMF,MXEFMF,iShares MSCI Emerging Markets Multifactor ETF,EMGF,BlackRock,multi_factor,equities
+iShares MSCI Global REIT ETF,REET,REET,,REET,,country,real_estate
+iShares MSCI U.S. Real Estate ETF,IYR,IYR,,IYR,,country,real_estate
+iShares Gold Trust,IAU,IAU,,IAU,,gold,commodities
+iShares Silver Trust,ARCX:SLV,ARCX:SLV,,SLV,,silver,commodities
+iShares S&P GSCI Commodity-Indexed Trust,GSG,GSG,,GSG,,total,commodities
+iShares GSCI Commodity Dynamic Roll Strategy ETF,CMDY,CMDY,,CMDY,,total,commodities
+iShares Bitcoin Trust ETF,IBIT,IBIT,,IBIT,,bitcoin,crypto
+iShares Ethereum Trust ETF,ETHA,ETHA,,ETHA,,ethereum,crypto
+JPYUSD,JPYUSD,JPYUSD,,JPYUSD=X,,usd,currencies
+EURUSD,EURUSD,EURUSD,,EURUSD=X,,usd,currencies
+GBPUSD,GBPUSD,GBPUSD,,GBPUSD=X,,usd,currencies
+USDEUR,USDEUR,USDEUR,,EUR=X,,eur,currencies
+JPYEUR,JPYEUR,JPYEUR,,JPYEUR=X,,eur,currencies
+GBPEUR,GBPEUR,GBPEUR,,GBPEUR=X,,eur,currencies
+USDJPY,USDJPY,USDJPY,,JPY=X,,jpy,currencies
+EURJPY,EURJPY,EURJPY,,EURJPY=X,,jpy,currencies
+GBPJPY,GBPJPY,GBPJPY,,GBPJPY=X,,jpy,currencies
+USDGBP,USDGBP,USDGBP,,GBP=X,,gbp,currencies
+EURGBP,EURGBP,EURGBP,,EURGBP=X,,gbp,currencies
+JPYGBP,JPYGBP,JPYGBP,,JPYGBP=X,,gbp,currencies
+米国債0-3ヶ月,SGOV,SGOV,SGOV（0–3m）,SGOV,,ultra_short_term,bonds
+米国債1-3ヶ月,BIL,BIL,BIL（1–3m）,BIL,,ultra_short_term,bonds
+米国債1-12ヶ月,SHV,SHV,SHV（1–12m）,SHV,,ultra_short_term,bonds
+米国債3ヶ月,TBIL,TBIL,TBIL（3m）,TBIL,,ultra_short_term,bonds
+米国債1-3年,SHY,SHY,1–3年: SHY,SHY,,short_term,bonds
+米国債3-7年,IEI,IEI,3–7年: IEI,IEI,,intermediate_term,bonds
+米国債10-20年,TLH,TLH,10–20年: TLH,TLH,,long_term,bonds
+米国債20年超1,TLT,TLT,20年超: TLT,TLT,,ultra_long_term,bonds
+米国債20年超2,SPTL,SPTL,20年超: SPTL,SPTL,,ultra_long_term,bonds
+米国債総合1-30年,GOVT,GOVT,総合: GOVT（1–30年）,GOVT,,total,bonds
+米国債インフレ連動0-5年1,STIP,STIP,0–5年: STIP,STIP,,short_term_inflation,bonds
+米国債インフレ連動0-5年2,VTIP,VTIP,0–5年: VTIP,VTIP,,short_term_inflation,bonds
+米国債インフレ連動総合1,TIP,TIP,総合: TIP,TIP,,total_inflation,bonds
+米国債インフレ連動総合2,SCHP,SCHP,総合: SCHP,SCHP,,total_inflation,bonds
+米国債短期フローティング1,TFLO,TFLO,短期フローティング: TFLO（iShares）,TFLO,,short_term_floating,bonds
+米国債短期フローティング2,USFR,USFR,短期フローティング: USFR（WisdomTree）,USFR,,short_term_floating,bonds
+米国債ストリップス長期デュレーション1,EDV,EDV,ゼロクーポン 25年超: EDV（Vanguard 20–30y STRIPS）,EDV,,long_term_floating,bonds
+米国債ストリップス長期デュレーション2,ZROZ,ZROZ,ゼロクーポン 25年超: ZROZ（PIMCO 25+）,ZROZ,,long_term_floating,bonds
+日本国債総合,2561.T,2561.T,総合（FTSE Japanese Government Bond）: 2561.T,2561.T,,total,bonds
+日本国債7-10年,236A.T,236A.T,7–10年 JGB: 236A（iShares 7–10 Year JGB）,236A.T,,intermediate_term,bonds
+日本国債国内総合,2510.T,2510.T,国内総合（NOMURA-BPI 国債中心）: 2510.T（NEXT FUNDS Japan Bond NOMURA-BPI）,2510.T,,total,bonds
+先進国の自国通貨建て国債総合,IGOV,IGOV,先進国の自国通貨建て国債（非米）: IGOV（iShares International Treasury / Developed ex-US）,IGOV,,country,bonds
+債券グローバル総合（政府＋社債含む、USDヘッジ）,BNDX,BNDX,"グローバル総合（政府＋社債含む、USDヘッジ）: BNDX（Vanguard Total International Bond, USDヘッジ）",BNDX,,country,bonds

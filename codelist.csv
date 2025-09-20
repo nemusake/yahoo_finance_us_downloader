@@ -42,14 +42,14 @@ MSCI Emerging Markets High Dividend Yield,^MXEF.HDY,MXEFHDY,iShares MSCI Emergin
 MSCI USA Small Cap,^MXUSSC,MXUSSC,iShares MSCI USA Small-Cap ETF,SUSA,BlackRock,small_cap,equities
 MSCI EAFE Small Cap,^MXEASC,MXEASC,iShares MSCI EAFE Small-Cap ETF,SCZ,BlackRock,small_cap,equities
 MSCI Emerging Markets Small Cap,^MXEFSC,MXEFSC,iShares MSCI Emerging Markets Small-Cap ETF,EEMS,BlackRock,small_cap,equities
-MSCI World Diversified Multiple-Factor,^MXWOMF,MXWOMF,iShares MSCI Global Multifactor ETF,ACWF,BlackRock,multi_factor,equities
+MSCI World Diversified Multiple-Factor,^MXWOMF,MXWOMF,iShares Global Equity Factor ETF,GLOF,BlackRock,multi_factor,equities
 MSCI USA Diversified Multiple-Factor,^MXUSMF,MXUSMF,iShares MSCI USA Multifactor ETF,LRGF,BlackRock,multi_factor,equities
 MSCI EAFE Diversified Multiple-Factor,^MXEAMF,MXEAMF,iShares MSCI International Multifactor ETF,INTF,BlackRock,multi_factor,equities
 MSCI Emerging Markets Diversified Multiple-Factor,^MXEFMF,MXEFMF,iShares MSCI Emerging Markets Multifactor ETF,EMGF,BlackRock,multi_factor,equities
 iShares MSCI Global REIT ETF,REET,REET,,REET,,country,real_estate
 iShares MSCI U.S. Real Estate ETF,IYR,IYR,,IYR,,country,real_estate
 iShares Gold Trust,IAU,IAU,,IAU,,gold,commodities
-iShares Silver Trust,ARCX:SLV,ARCX:SLV,,ARCX:SLV,,silver,commodities
+iShares Silver Trust,ARCX:SLV,ARCX:SLV,,SLV,,silver,commodities
 iShares S&P GSCI Commodity-Indexed Trust,GSG,GSG,,GSG,,total,commodities
 iShares GSCI Commodity Dynamic Roll Strategy ETF,CMDY,CMDY,,CMDY,,total,commodities
 iShares Bitcoin Trust ETF,IBIT,IBIT,,IBIT,,bitcoin,crypto
