@@ -46,7 +46,7 @@ uv run python ohlc_downloader.py --ticker 7203.T --frequency daily --period 1y -
 - `--total-return-index` TRI列（配当再投資を仮定、基準100）を追加
 
 ## 使い方（複数ティッカー：codelist）
-`--codelist` にヘッダー付きCSV（UTF-8/BOM可）を指定すると、列 `etf_ticker` に含まれる全ティッカーを取得して、各ティッカーごとに `download/<ticker>_<frequency>.csv` へ出力します。
+`--codelist` にヘッダー付きCSV（UTF-8/BOM可）を指定すると、列 `etf_ticker` に含まれる全ティッカーを取得し、各ティッカーごとに `download/<asset_class>_<category>_<ticker>_<frequency>.csv` へ出力します（codelist専用の命名規則）。
 
 ```
 uv run python ohlc_downloader.py --codelist codelist.csv --frequency daily --period 5y
@@ -56,6 +56,10 @@ uv run python ohlc_downloader.py --codelist codelist.csv --frequency daily --per
 - `--codelist` 使用時は `--ticker` は不要です（指定されていても無視されます）。
 - 複数銘柄のため `--stdout`/`--output` は無効です。出力先は自動で `download` 配下になります。
 - CSVの列名解釈は大文字小文字を区別しません（例: `ETF_Ticker` でも可）。
+- 出力ファイル名の構成要素は codelist の `asset_class`（8列目）と `category`（7列目）、`etf_ticker`、`frequency` です。
+  - `asset_class` または `category` が空・欠損の場合は `unknown` を補完します。
+  - 同一 `etf_ticker` が複数行に現れた場合、最初に出現した分類（asset_class/category）を採用し、異なる分類が後続で見つかれば警告を表示します（出力は1ファイル）。
+  - ファイル名は英数字以外を `-` にサニタイズし、連続した `-` は1つに圧縮します。
 
 ## 例
 - 標準出力（BOM付き）に出力

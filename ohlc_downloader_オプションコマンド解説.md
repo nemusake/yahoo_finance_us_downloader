@@ -36,8 +36,13 @@ uv run python ohlc_downloader.py --codelist <CSVパス> --frequency <daily|weekl
 
 - 複数ティッカー取得（`--codelist`）
   - `--codelist <CSVパス>`: ヘッダー付きCSV（UTF-8/BOM可）を読み込み、列 `etf_ticker` にある全銘柄を一括取得
-  - `--codelist` 併用時は `--stdout`/`--output` は無効。各銘柄を `download/<ticker>_<frequency>.csv` に保存
+  - `--codelist` 併用時は `--stdout`/`--output` は無効。各銘柄を `download/<asset_class>_<category>_<ticker>_<frequency>.csv` に保存（codelist専用命名）
   - 列名の大文字小文字は無視（例: `ETF_Ticker` でも可）
+  - 命名の詳細:
+    - `asset_class` と `category` は codelist の7・8列目に由来（列名で解釈）
+    - いずれかが空・欠損なら `unknown` を補完
+    - 同一 `etf_ticker` が複数行に現れた場合は、最初の分類を採用。以降で異なる分類が見つかれば警告を表示（出力は1ファイル）
+    - 英数字以外は `-` にサニタイズし、連続 `-` は1つに圧縮
 
 - 調整/指数オプション
   - `--no-adjust`: 未調整の生OHLCを出力（既定は調整後OHLC）

@@ -107,8 +107,12 @@ def main(argv: Optional[list[str]] = None) -> int:
         s = re.sub(r"-+", "-", s).strip('-')
         return s or "data"
 
-    def fetch_and_write_one(ticker: str) -> int:
-        """単一ティッカーを取得して出力する。成功:0 / 失敗:>0 を返す"""
+    def fetch_and_write_one(ticker: str, asset_class: Optional[str] = None, category: Optional[str] = None) -> int:
+        """単一ティッカーを取得して出力する。成功:0 / 失敗:>0 を返す
+
+        codelist使用時に限り、出力ファイル名に asset_class/category を含める。
+        欠損時は 'unknown' を補完する。
+        """
         try:
             print(f"[INFO] Fetching: {ticker}", file=sys.stderr)
             t = yf.Ticker(ticker)
@@ -162,9 +166,13 @@ def main(argv: Optional[list[str]] = None) -> int:
                 os.makedirs(out_dir, exist_ok=True)
             except Exception:
                 pass
+            # codelist使用時はファイル名: assetclass_category_ticker_frequency.csv
+            # 値が欠ける場合は 'unknown' を補完
+            ac_val = (asset_class or "").strip() or "unknown"
+            cg_val = (category or "").strip() or "unknown"
             output_path = os.path.join(
                 out_dir,
-                f"{_sanitize_filename_from_ticker(ticker)}_{args.frequency}.csv",
+                f"{_sanitize_filename_from_ticker(ac_val)}_{_sanitize_filename_from_ticker(cg_val)}_{_sanitize_filename_from_ticker(ticker)}_{args.frequency}.csv",
             )
             if df is None:
                 print(f"[WARN] 空のDataFrameを受け取りました ({ticker})", file=sys.stderr)
@@ -232,7 +240,7 @@ def main(argv: Optional[list[str]] = None) -> int:
         if args.output:
             print("[WARN] --codelist 指定時は --output は無効です（個別ファイルに出力します）", file=sys.stderr)
 
-        # CSVを読み込み、列 etf_ticker を抽出
+        # CSVを読み込み、列 etf_ticker / category / asset_class を抽出
         try:
             df_codes = pd.read_csv(args.codelist, dtype=str, encoding="utf-8-sig")
         except Exception as e:
@@ -243,26 +251,41 @@ def main(argv: Optional[list[str]] = None) -> int:
         if "etf_ticker" not in df_codes.columns:
             print("[ERROR] codelistに 'etf_ticker' 列が見つかりません", file=sys.stderr)
             return 2
-        raw_list = df_codes["etf_ticker"].astype(str).tolist()
-        # 空・nan・重複を排除
-        uniq: list[str] = []
-        seen = set()
-        for x in raw_list:
-            s = (x or "").strip()
-            if not s or s.lower() == "nan":
+        # 行順を維持しつつ、同一ティッカーは最初の分類を採用（以降で異なる分類が来たら警告）
+        mapping: dict[str, tuple[Optional[str], Optional[str]]] = {}
+        order: list[str] = []
+        for _, row in df_codes.iterrows():
+            tk = str(row.get("etf_ticker", "") or "").strip()
+            if not tk or tk.lower() == "nan":
                 continue
-            if s not in seen:
-                seen.add(s)
-                uniq.append(s)
+            cat = row.get("category")
+            ac = row.get("asset_class")
+            # 値はそのままの大文字小文字を保持
+            cat_s = None if (cat is None or str(cat).strip().lower() == "nan" or str(cat).strip() == "") else str(cat)
+            ac_s = None if (ac is None or str(ac).strip().lower() == "nan" or str(ac).strip() == "") else str(ac)
+            if tk not in mapping:
+                mapping[tk] = (ac_s, cat_s)
+                order.append(tk)
+            else:
+                prev_ac, prev_cat = mapping[tk]
+                # 異なる分類が来た場合に警告（最初のものを採用）
+                if (ac_s is not None and prev_ac is not None and str(ac_s) != str(prev_ac)) or (
+                    cat_s is not None and prev_cat is not None and str(cat_s) != str(prev_cat)
+                ):
+                    print(
+                        f"[WARN] 同一ティッカーに異なる分類を検出: {tk} (既存: asset_class={prev_ac}, category={prev_cat}; 新: asset_class={ac_s}, category={cat_s}) — 最初の分類を採用します",
+                        file=sys.stderr,
+                    )
 
-        if not uniq:
+        if not order:
             print("[WARN] codelistの 'etf_ticker' に有効なティッカーが見つかりませんでした", file=sys.stderr)
             return 0
 
-        total = len(uniq)
+        total = len(order)
         errs = 0
-        for tk in uniq:
-            rc = fetch_and_write_one(tk)
+        for tk in order:
+            ac_s, cat_s = mapping[tk]
+            rc = fetch_and_write_one(tk, ac_s, cat_s)
             if rc != 0:
                 errs += 1
         print(f"[INFO] 完了 {total - errs}/{total} 件", file=sys.stderr)
