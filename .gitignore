@@ -1,0 +1,26 @@
+# Python 一般
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+build/
+dist/
+
+# プロジェクト生成物
+download/
+
+# エディタ/OS由来
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# WindowsのZone.Identifierサイドカーファイル
+*:Zone.Identifier
+
+# 仮想環境（uvを使うが念のため）
+.venv/
+venv/
+

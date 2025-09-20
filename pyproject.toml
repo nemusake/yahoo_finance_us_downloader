@@ -1,0 +1,16 @@
+[project]
+name = "yahoo-finance-cli"
+version = "0.1.0"
+description = "Yahoo! Finance の時系列データを取得して出力するCLI"
+readme = "ohlc_downloader_README.md"
+requires-python = ">=3.11"
+authors = [
+  { name = "codex", email = "codex@nemusake.com" },
+]
+dependencies = [
+  "yfinance",
+  "pandas",
+]
+
+[tool.uv]
+# uvを前提とした依存解決／実行を想定
